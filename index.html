@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <form class="form m-5 p-5 border border-info bg-info" action="action-page.php">
+        <fieldset>
+            <legend class="text-center"> <h4>Gym Registration Form</h4> </legend>
+            <label for="full name"><h6>Full Name</h6> </label>
+            <div class="row">
+                <div class=" form-group col-6 col-md-5">
+                    <div class="input-group">
+                        <span class="inpute-group-text">Mr./Mrs.</span>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                            required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                    <div class="form-group col-6 col-md-5">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group col-6 col-md-6">
+                        <label for="Gender"> Gender </label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input-control" type="radio" name="inlineadioOptions" id="inlineradio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineradio1"> Male </label>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineadioOptions" id="inlineradio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineradio2"> Female </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-6 col-md-3">
+                        <div class="input-group">
+                            <label for="Age"> Age :</label>
+                            <input class="form-control" placeholder=" Age in Years" aria-label="Age" required>
+                            <span class="input-group-text">Years</span>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <label for="Contact Information"> <h6>Contact Information</h6> </label>
+            <div class="row">
+                <div class="form-group col-12 col-md-5">
+                    <input type="text" class="form-control" placeholder="Address" aria-label="Address" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                    <div class="input-group">
+                        <span class="input-group-text">+91</span>
+                    <input type="cnt" class="form-control" placeholder="Mobile Number" aria-label="Mobile number"
+                        minlength="10" maxlength="10" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                    <input type="Email" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+            </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-12 col-md-3">
+                    <label for=""> Joining Date </label>
+                    <input type="date" required class="form-control">
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group col-12 col-md-3">
+                    <label for=""> Shift </label>
+                    <select name="shift" id="shift" class="form-control" required>
+                        <option> Select</option>
+                        <option> Morning </option>
+                        <option> Evening </option>
+                    </select>
+                </div>
+                <div class="form-group col-12 col-md-3">
+                    <label for="fees"> Fees Paid </label>
+                    <select name="fees" id="fees" class="form-control" required>
+                        <option> Select </option>
+                        <option> 3 months (1500/-) </option>
+                        <option> 6 months (2800/-)</option>
+                        <option> 12 months (5000/-) </option>
+                        <option> 24 months (9000/-)</option>
+                    </select>
+
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+            <br>
+
+            <br><br>
+            <div class="row">
+                <div class="form-group col-6 col-md-3">
+                    <label for="id-proof">ID Proof</label>
+                    <select name="" id="" class="form-control" required>
+                        <option> Select </option>
+                        <option>Adhar Card </option>
+                        <option> PAN Card </option>
+                        <option> Passport</option>
+                        <option> Driving Licence </option>
+                    </select>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="form-group col-12 col-md-4">
+                    <label></label>
+                    <input type="text" class="form-control" placeholder="ID Number" aria-placeholder="ID Number"
+                        required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group col-6 col-md-3">
+                    <label for="Personal-info">DOB</label>
+                    <input type="date" class="form-control">
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-12 col-md-4">
+                    <div class="input-group">
+                        <label for="cnt">Height : </label>
+                        <input type="number" class="form-control" placeholder="Height in cms"
+                            aria-placeholder="Height in cms" required>
+                        <span class="input-group-text">cms</span>
+                    </div>
+                </div>
+                <div class="form-group col-12 col-md-4">
+                    <div class="input-group">
+                        <label for="cnt">Weight : </label>
+                        <input type="number" class="form-control" placeholder="Weight in cms"
+                            aria-placeholder="Weight in cms" required>
+                        <span class="input-group-text">cms</span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="text">Emergency-Contact Name</label>
+                    <input type="text" class="form-control" placeholder="Emergency-Contact Name"
+                        aria-placeholder="Emergency-Contact Name" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group col-12 col-md-4">
+                    <label for="text">Emergency-Contact Number</label>
+                    <input type="cnt" class="form-control" placeholder="Emergency-Contact Number"
+                        aria-placeholder="Emergency-Contact Number" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-12 col-md-6">
+                    <label for="text">Medical Histry: If any,</label>
+                    <input type="text" class="form-control" placeholder="Medical Histry"
+                        aria-placeholder="Medical Histry">
+                </div>
+                <br><br>
+                <br>
+                <div class="form-group form-check col-12 ms-3">
+                    <input class="form-check-input" type="checkbox" id="check1" name="option1" value="somthing" required>
+                    <label class="form-check-label">I am agree with all terms and conditions.</label>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" class="btn-check" id="btn-check-success">
+                    <label class="btn btn-primary" for="btn-check-success"> Submit</label>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
